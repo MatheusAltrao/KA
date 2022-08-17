@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #cf5151;
+  --second-color: #ff8585;
+  --terciary-color: #443f45;
+  --quartenery-color: #2b2b2b;
+}
+
 i,
 svg {
   color: #fff;
@@ -27,7 +34,6 @@ section {
 
 .nerdcia {
   color: crimson;
-  opacity: 10;
 }
 
 .ligth-background {
@@ -36,7 +42,7 @@ section {
 }
 
 .dark-background {
-  background-color: #292829;
+  background-color: #ff8585;
   color: #fff;
 }
 
@@ -104,8 +110,8 @@ header .subtitle {
 
   padding: 10px 30px;
 
-  background-color: #191919;
-  color: #fff;
+  background-color: #cf5151;
+  color: #000;
   box-shadow: 0px 0px 10px #000;
 }
 
@@ -147,6 +153,7 @@ header .containerwidth {
 }
 
 /* =================== home =================== */
+
 #home {
   padding: 0;
 }
@@ -182,9 +189,8 @@ header .containerwidth {
 }
 
 .gallery .content {
-  background: #443f45;
   box-shadow: 5px 5px 0.1em #000;
-
+  background-color: var(--primary-color);
   border-radius: 0.5rem;
 
   display: flex;
@@ -219,7 +225,7 @@ header .containerwidth {
   padding: 0.5rem 2rem;
   display: flex;
   align-items: center;
-  background-color: #000;
+  background-color: var(--primary-color);
   color: #fff;
   border: 2px solid #fff;
   border-radius: 0.5rem;
@@ -232,8 +238,7 @@ header .containerwidth {
 }
 
 .gallery-button:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--second-color);
 }
 
 /* =================== newsletter ===================  */
@@ -269,26 +274,22 @@ input {
   gap: 0.5rem;
   font-weight: 700;
   border-radius: 0.5rem;
-  background-color: #fff;
+  color: #fff;
+  background-color: var(--primary-color);
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 20px;
   width: 100%;
   outline: none;
+  border: 2px solid #fff;
 }
 
 .contact-button:hover {
-  background-color: #000;
-  color: #fff;
-  fill: #fff;
-}
-
-.contact-button:hover i svg {
-  fill: #fff;
+  filter: brightness(1.1);
 }
 
 .contact-button i svg {
-  fill: #000;
+  fill: #fff;
 }
 
 .location {
@@ -417,17 +418,12 @@ footer i svg {
   }
 
   .gallery .content {
-    background: #443f45;
-    box-shadow: 5px 5px 0.1em #000;
-
-    border-radius: 0.5rem;
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    border-radius: 1rem;
   }
 
   .gallery img {

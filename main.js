@@ -37,3 +37,9 @@ const scrollTop = () => {
 }
 
 document.getElementById('backTopButton').onclick = scrollTop
+
+/* typed */
+
+var typed = new Typed('#typed', {
+  stringsElement: '#typed-strings'
+})
