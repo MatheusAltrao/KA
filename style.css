@@ -475,6 +475,7 @@ footer i svg {
   .footer-text .logo {
     font-size: 50px;
     margin-bottom: 1rem;
+    color: var(--primary-color);
   }
 
   .footer-text h5 {
