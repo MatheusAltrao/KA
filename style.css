@@ -12,12 +12,12 @@
   --second-color: #ff8585;
   --terciary-color: #443f45;
   --quartenery-color: #2b2b2b;
+  --box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
 }
 
 svg {
   color: #fff;
   fill: #fff;
-  cursor: pointer;
 }
 html {
   scroll-behavior: smooth;
@@ -37,12 +37,12 @@ section {
 }
 
 .ligth-background {
-  background-color: #dfdfdf;
+  background-color: #fff;
   color: #000;
 }
 
 .dark-background {
-  background-color: #ff8585;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -59,7 +59,7 @@ h2 {
 
 .subtitle {
   text-align: justify;
-  opacity: 0.7;
+  opacity: 0.9;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 25px;
@@ -142,10 +142,15 @@ header .containerwidth {
   right: 0;
 }
 
+#icon-menu {
+  cursor: pointer;
+}
+
 .icon-close {
   position: absolute;
   top: 10px;
   left: 10px;
+  cursor: pointer;
 }
 
 #navbar li {
@@ -190,7 +195,9 @@ header .containerwidth {
 
 .gallery .content {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
-  background-color: var(--primary-filter-color);
+  background-color: var(--primary-color);
+  filter: brightness(1.8);
+
   border-radius: 0.5rem;
 
   display: flex;
@@ -308,8 +315,8 @@ input {
 }
 
 /* =================== footer ===================  */
-footer {
-  padding: 2rem;
+#footer-area {
+  padding: 1rem;
 }
 
 footer .social {
@@ -327,13 +334,16 @@ footer .social i:hover {
 }
 
 footer i svg {
+  cursor: pointer;
   fill: var(--primary-color);
 }
 
 /* =================== back-to-top =================== */
 
 .backTopButton {
-  background-color: var(--primary-color);
+  background-color: var(--primary-filter-color);
+  filter: brightness(1.2);
+  box-shadow: var(--box-shadow);
 
   transition: all 0.3s;
 
