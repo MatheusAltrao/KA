@@ -34,6 +34,11 @@ section {
 
 .nerdcia {
   color: crimson;
+  text-decoration: underline;
+}
+
+a .nerdcia:hover {
+  text-decoration: none;
 }
 
 .ligth-background {
@@ -57,6 +62,10 @@ h2 {
   margin: 2rem 0;
 }
 
+label {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .subtitle {
   text-align: justify;
   opacity: 0.9;
@@ -69,7 +78,8 @@ h1,
 h2,
 h3,
 a,
-strong {
+strong,
+span {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -161,8 +171,10 @@ header .containerwidth {
 
 #home {
   padding: 0;
+  position: relative;
 }
 #home .image {
+  margin-top: 4rem;
   height: 100vh;
   object-fit: cover;
 }
@@ -171,6 +183,33 @@ header .containerwidth {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  position: absolute;
+}
+
+#home label {
+  position: absolute;
+  top: 150px;
+  left: 2rem;
+  z-index: 99;
+  font-size: 22px;
+  color: #fff;
+}
+
+#home label .home-logo {
+  font-size: 40px;
+  color: var(--primary-color);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.home-text-2 {
+  font-size: 20px;
+}
+
+.typing {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 23px;
 }
 
 /* =================== about =================== */
@@ -319,6 +358,11 @@ input {
   padding: 1rem;
 }
 
+.footer-text .logo {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
 footer .social {
   display: flex;
   gap: 0.5rem;
@@ -343,7 +387,7 @@ footer i svg {
 .backTopButton {
   background-color: var(--primary-filter-color);
   filter: brightness(1.2);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(box-shadow);
 
   transition: all 0.3s;
 
@@ -409,6 +453,26 @@ footer i svg {
 
   .logo {
     text-align: left;
+  }
+  /* home-minwidth */
+  #home label {
+    left: 5.5rem;
+  }
+
+  .home-text-1 {
+    font-size: 40px;
+  }
+
+  #home label .home-logo {
+    font-size: 55px;
+  }
+
+  .home-text-2 {
+    font-size: 40px;
+  }
+
+  .typing {
+    font-size: 55px;
   }
 
   #about .about-container {
@@ -480,12 +544,6 @@ footer i svg {
 
   #footer .social {
     gap: 2rem;
-  }
-
-  .footer-text .logo {
-    font-size: 50px;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
   }
 
   .footer-text h5 {

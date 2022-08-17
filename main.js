@@ -40,6 +40,11 @@ document.getElementById('backTopButton').onclick = scrollTop
 
 /* typed */
 
-var typed = new Typed('#typed', {
-  stringsElement: '#typed-strings'
+$(document).ready(function () {
+  var typed = new Typed('.typing', {
+    strings: ['Mulher', 'Feliz', '', 'Atraente', 'Segura'],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  })
 })
