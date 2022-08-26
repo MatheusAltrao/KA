@@ -52,18 +52,18 @@ $(document).ready(function () {
 /* scrollrevew */
 ScrollReveal().reveal('h2', {
   delay: 100,
-  duration: 500,
+  duration: 300,
   reset: true
 })
 
 ScrollReveal().reveal('.subtitle', {
   delay: 275,
-  duration: 500,
+  duration: 300,
   reset: true
 })
 
 ScrollReveal().reveal('.content', {
   delay: 400,
-  duration: 500,
+  duration: 320,
   reset: true
 })
