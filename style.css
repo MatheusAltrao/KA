@@ -126,7 +126,7 @@ header .subtitle {
   justify-content: space-between;
   text-align: center;
 
-  padding: 10px 30px;
+  padding: 10px 20px;
 
   background-color: #cf5151;
   color: #000;
@@ -232,7 +232,7 @@ header .containerwidth {
   border-radius: 1rem;
 }
 
-/* =================== gacts ===================  */
+/* =================== gallery ===================  */
 
 .gallery {
   margin-top: 5rem;
@@ -248,18 +248,20 @@ header .containerwidth {
   background-color: var(--second-color);
   border-radius: 0.5rem;
 
+  width: 19rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 1rem;
 }
 
-.gallery img {
+.gallery .content img {
   margin-top: 1rem;
-  height: 16rem;
-  width: 16rem;
+  height: 18rem;
+  width: 17rem;
+  padding: 0 0.5rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
 }
@@ -510,10 +512,10 @@ footer i svg {
     text-align: center;
   }
 
-  .gallery img {
+  .gallery .content img {
     margin-top: 1rem;
     height: 18rem;
-    width: 18rem;
+    width: 20rem;
     border-radius: 1rem;
     transition: all 0.3s ease;
   }

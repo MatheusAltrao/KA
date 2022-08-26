@@ -22,7 +22,7 @@ window.addEventListener('scroll', function () {
 
 function backToTop() {
   const buttonTop = document.getElementById('backTopButton')
-  if (window.scrollY >= 360) {
+  if (window.scrollY >= 4000) {
     buttonTop.classList.add('show')
   } else {
     buttonTop.classList.remove('show')
