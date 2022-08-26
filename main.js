@@ -42,7 +42,7 @@ document.getElementById('backTopButton').onclick = scrollTop
 
 $(document).ready(function () {
   var typed = new Typed('.typing', {
-    strings: ['Mulher', 'Feliz', '', 'Atraente', 'Segura'],
+    strings: ['Mulher', 'Poderosa', 'Atraente', 'Charmosa', 'Sedutora'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
@@ -63,7 +63,7 @@ ScrollReveal().reveal('.subtitle', {
 })
 
 ScrollReveal().reveal('.content', {
-  delay: 400,
+  delay: 200,
   duration: 320,
   reset: true
 })

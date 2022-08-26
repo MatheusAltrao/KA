@@ -180,6 +180,7 @@ header .containerwidth {
 #home {
   padding: 0;
   position: relative;
+  background-image: linear-gradient(45deg, #e4e4e4, var(--second-color));
 }
 #home .image {
   margin-top: 4rem;
@@ -266,12 +267,18 @@ header .containerwidth {
   transition: all 0.3s ease;
 }
 
+.gallery-text {
+  padding: 1rem 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
 .gallery-title {
   padding-bottom: 0.3rem;
 }
 
 .gallery-subtitle {
-  width: 80%;
   padding-bottom: 1rem;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -279,24 +286,30 @@ header .containerwidth {
 }
 
 .gallery-button {
-  padding: 0.5rem 2rem;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  padding: 1.2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--primary-color);
   color: #fff;
   border: 2px solid #fff;
   border-radius: 0.5rem;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  height: 2rem;
+  width: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
 
 .gallery-button:hover {
-  background-color: #fff;
-  color: var(--primary-color);
+  filter: brightness(1.2);
+}
+
+.gallery-price {
+  font-size: 18px;
 }
 
 /* =================== newsletter ===================  */
@@ -403,9 +416,9 @@ footer i svg {
 
   transition: all 0.3s;
 
-  height: 3rem;
-  width: 3rem;
-
+  height: 2rem;
+  width: 2rem;
+  padding: 1.2rem;
   border-radius: 50%;
 
   position: fixed;
@@ -514,7 +527,7 @@ footer i svg {
 
   .gallery .content img {
     margin-top: 1rem;
-    height: 18rem;
+    height: 20rem;
     width: 20rem;
     border-radius: 1rem;
     transition: all 0.3s ease;
