@@ -55,6 +55,10 @@ strong {
   font-weight: 700;
 }
 
+.hidden {
+  display: none;
+}
+
 /* =================== fonts  ===================*/
 h2 {
   text-align: center;
@@ -234,9 +238,7 @@ header .containerwidth {
 
 .gallery .content {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
-  background-color: var(--primary-color);
-  filter: brightness(1.8);
-
+  background-color: var(--second-color);
   border-radius: 0.5rem;
 
   display: flex;
@@ -369,11 +371,11 @@ footer .social {
   margin-top: 3rem;
 }
 
-footer .social i {
+footer .social a {
   transition: all 0.3s ease;
 }
 
-footer .social i:hover {
+footer .social a:hover {
   transform: translateY(-8px);
 }
 
