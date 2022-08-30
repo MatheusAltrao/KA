@@ -64,10 +64,6 @@ strong {
   font-weight: 700;
 }
 
-.hidden {
-  display: none;
-}
-
 /* =================== fonts  ===================*/
 h2 {
   text-align: center;
@@ -184,32 +180,26 @@ header .containerwidth {
 
 #home {
   padding: 0;
-  position: relative;
+
   background-image: linear-gradient(45deg, #e1e1e1, var(--second-color));
 }
-#home .image {
-  margin-top: 4rem;
+
+#home {
   height: 100vh;
-  object-fit: cover;
-}
-
-#home .image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-}
-
-#home label {
-  position: absolute;
-  top: 150px;
-  left: 2rem;
-  z-index: 99;
   font-size: 22px;
   color: #fff;
 }
+#home .text {
+  padding-top: 15rem;
+  padding-left: 2rem;
+  text-align: left;
+}
 
-#home label .home-logo {
+#home .text {
+  padding-left: 2rem;
+}
+
+#home .text .home-logo {
   font-size: 40px;
   color: var(--primary-color);
   font-family: 'Oswald', sans-serif;
@@ -335,9 +325,14 @@ header .containerwidth {
 }
 
 .gallery-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 1rem 1rem;
   text-align: left;
   margin-bottom: 1rem;
+  width: 100%;
   position: relative;
 }
 
@@ -540,6 +535,10 @@ footer i svg {
 
   .subtitle {
     font-size: 16px;
+  }
+
+  #home .text {
+    padding-left: 0rem;
   }
 
   .logo {
