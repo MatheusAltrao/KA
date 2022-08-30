@@ -376,7 +376,7 @@ header .containerwidth {
 /* =================== newsletter ===================  */
 
 .newsletter {
-  height: 20vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,11 +384,8 @@ header .containerwidth {
   color: var(--primary-color);
 }
 
-input {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+.newsletter .subtitle {
+  margin-bottom: 2rem;
 }
 
 /* =================== contact ===================  */
@@ -519,6 +516,10 @@ footer i svg {
   }
   .subtitle {
     text-align: center;
+  }
+
+  #navbar {
+    width: 500px;
   }
 
   #header {
